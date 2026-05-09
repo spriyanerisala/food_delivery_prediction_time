@@ -26,7 +26,7 @@ const DeliveryForm = () => {
     e.preventDefault();
 
     const response = await axios.post(
-      import.meta.env.VITE_BACKEND_URI,
+      `${import.meta.env.VITE_BACKEND_URI}/predict`,
       form
     );
 
